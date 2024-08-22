@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="0347e3e5aacf00427e2c69fe8ab25cc1764e8dec99bb38e2dd5d9ecc2b830266.html">Se Desea Verificar La Creaci&oacute;n Masiva De Productos Y Ofertas Dentro De Octopia</a></span>
+                > <span class="truncate-60"><a
+                    href="5fd13b838e4a148a4121ae797b8bf7a1248b48b823c78004bff0572cbc90aa52.html">Creaci&oacute;n masiva productos y ofertas </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-02-2024 15:19</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Se Desea Verificar La Creación Masiva De Productos Y Ofertas Dentro De Octopia </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Y su posterior validación dentro del MDW Y VTEX
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="389c74d6a3abdb6ecb0930ed2f9174bc7910e9b1695663e802e23c0f3e507db5.html">Creacion Oferta Masiva
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Creaci&oacute;n masiva productos y ofertas
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given El usuario cargue los archivos de productos y ofertas dentro del portal vendedor<br><table class='embedded'><tbody><tr><td>tipoProducto</td></tr><tr><td>&lt;tipoProducto&gt;</td></tr></tbody></table><br>When se procesen y registren los datos en Dynamodb<br>Then se deben visualizar los productos y ofertas en estado activo en VTEX</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: an element that is visible but: no matching element found by [[ChromeDriver: chrome on linux (37192cd38c9accf50f2c0f6f8c8bcaa4)] -) xpath: //div[@class='modal-content']//p[contains(text(),'La oferta se publica con &eacute;xito.')]]</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.grupoexito.octopia.tasks.CrearOferta.performAs(CrearOferta.java:33)<br />co.com.grupoexito.octopia.tasks.CrearOfertaMasiva.performAs(CrearOfertaMasiva.java:38)<br />co.com.grupoexito.octopia.stepDefinitions.CreacionMasiva.el_usuario_cargue_los_archivos_de_productos_y_ofertas_dentro_del_portal_vendedor(CreacionMasiva.java:96)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource13906323373824786169.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="1300a7ab591b482f924b146ae7b11f51b035833e20cd43aa646eb4d539d54b36.png" title=" 1: Creaci&oacute;n masiva productos y ofertas ({tipoProducto=NoVariante})" width="1850"/>
+                <img src="1300a7ab591b482f924b146ae7b11f51b035833e20cd43aa646eb4d539d54b36.png" title=" Given El usuario cargue los archivos de productos y ofertas dentro del portal vendedor
+| tipoProducto |
+| NoVariante |" width="1850"/>
+                <img src="1300a7ab591b482f924b146ae7b11f51b035833e20cd43aa646eb4d539d54b36.png" title=" Analista exito generar gtin" width="1850"/>
+                <img src="1300a7ab591b482f924b146ae7b11f51b035833e20cd43aa646eb4d539d54b36.png" title=" Analista exito generar codigo gtin" width="1850"/>
+                <img src="1300a7ab591b482f924b146ae7b11f51b035833e20cd43aa646eb4d539d54b36.png" title=" Analista exito navegar a" width="1850"/>
+                <img src="1300a7ab591b482f924b146ae7b11f51b035833e20cd43aa646eb4d539d54b36.png" title=" Analista Exito opens the Pagina digito gtin" width="1850"/>
+                <img src="956d667a2500d1914360d63c085790741a498f3048cfde1ebcef283f76ebfbf4.png" title=" Analista Exito opens the Pagina digito gtin (completed)" width="1850"/>
+                <img src="956d667a2500d1914360d63c085790741a498f3048cfde1ebcef283f76ebfbf4.png" title=" Analista exito navegar a (completed)" width="1850"/>
+                <img src="2693044b699c2e4f447e2b6605ccfde6dc25c194b2384540dba238947f7fbb0f.png" title=" Analista Exito enters '645459366248' into Caja de texto ID Number del GTIN" width="1850"/>
+                <img src="503fcfa2560e2ddd33bdc86653ce825997a7cdba5ab6529b91005b828e02e265.png" title=" Analista Exito enters '645459366248' into Caja de texto ID Number del GTIN (completed)" width="1850"/>
+                <img src="503fcfa2560e2ddd33bdc86653ce825997a7cdba5ab6529b91005b828e02e265.png" title=" Analista Exito clicks on Bot&oacute;n calcular" width="1850"/>
+                <img src="ab163faf38281ac5083195ae9fcb9bc0ce11c08c02e672e77ee0c3de19348b1d.png" title=" Analista exito cerrar ventana emergente" width="1850"/>
+                <img src="ab163faf38281ac5083195ae9fcb9bc0ce11c08c02e672e77ee0c3de19348b1d.png" title=" Analista exito cerrar ventana emergente" width="1850"/>
+                <img src="ab163faf38281ac5083195ae9fcb9bc0ce11c08c02e672e77ee0c3de19348b1d.png" title=" Analista exito consultar gtin" width="1850"/>
+                <img src="ab163faf38281ac5083195ae9fcb9bc0ce11c08c02e672e77ee0c3de19348b1d.png" title=" Analista exito generar codigo gtin" width="1850"/>
+                <img src="ab163faf38281ac5083195ae9fcb9bc0ce11c08c02e672e77ee0c3de19348b1d.png" title=" Analista exito navegar a" width="1850"/>
+                <img src="ab163faf38281ac5083195ae9fcb9bc0ce11c08c02e672e77ee0c3de19348b1d.png" title=" Analista Exito opens the Pagina digito gtin" width="1850"/>
+                <img src="956d667a2500d1914360d63c085790741a498f3048cfde1ebcef283f76ebfbf4.png" title=" Analista Exito opens the Pagina digito gtin (completed)" width="1850"/>
+                <img src="956d667a2500d1914360d63c085790741a498f3048cfde1ebcef283f76ebfbf4.png" title=" Analista exito navegar a (completed)" width="1850"/>
+                <img src="2693044b699c2e4f447e2b6605ccfde6dc25c194b2384540dba238947f7fbb0f.png" title=" Analista Exito enters '143221321372' into Caja de texto ID Number del GTIN" width="1850"/>
+                <img src="19eab5c460dc1a02ed839ef42c2d4da808895c2c4841b2cf5a939c46e2726e64.png" title=" Analista Exito enters '143221321372' into Caja de texto ID Number del GTIN (completed)" width="1850"/>
+                <img src="19eab5c460dc1a02ed839ef42c2d4da808895c2c4841b2cf5a939c46e2726e64.png" title=" Analista Exito clicks on Bot&oacute;n calcular" width="1850"/>
+                <img src="fdd02186a26eb34665fcd34f7d7d0d0577c5c472d22e6d3f266477b3997d58aa.png" title=" Analista exito cerrar ventana emergente" width="1850"/>
+                <img src="fdd02186a26eb34665fcd34f7d7d0d0577c5c472d22e6d3f266477b3997d58aa.png" title=" Analista exito cerrar ventana emergente" width="1850"/>
+                <img src="fdd02186a26eb34665fcd34f7d7d0d0577c5c472d22e6d3f266477b3997d58aa.png" title=" Analista exito consultar gtin" width="1850"/>
+                <img src="fdd02186a26eb34665fcd34f7d7d0d0577c5c472d22e6d3f266477b3997d58aa.png" title=" Analista exito generar gtin (completed)" width="1850"/>
+                <img src="fdd02186a26eb34665fcd34f7d7d0d0577c5c472d22e6d3f266477b3997d58aa.png" title=" Analista exito modificar gtin archivo excel" width="1850"/>
+                <img src="fdd02186a26eb34665fcd34f7d7d0d0577c5c472d22e6d3f266477b3997d58aa.png" title=" Analista exito navegar a" width="1850"/>
+                <img src="fdd02186a26eb34665fcd34f7d7d0d0577c5c472d22e6d3f266477b3997d58aa.png" title=" Analista Exito opens the Pagina inicio octopia vendedores" width="1850"/>
+                <img src="851d8e94b984426d64cf43add760627f5f5b4b30a43d11bcc23b4a54766708f5.png" title=" Analista Exito opens the Pagina inicio octopia vendedores (completed)" width="1850"/>
+                <img src="851d8e94b984426d64cf43add760627f5f5b4b30a43d11bcc23b4a54766708f5.png" title=" Analista exito navegar a (completed)" width="1850"/>
+                <img src="851d8e94b984426d64cf43add760627f5f5b4b30a43d11bcc23b4a54766708f5.png" title=" Analista exito iniciar sesion octopia vendedor" width="1850"/>
+                <img src="851d8e94b984426d64cf43add760627f5f5b4b30a43d11bcc23b4a54766708f5.png" title=" Analista Exito enters 'oct-test-vex-exito-demo-cdv-exito-demo3@outlook.com' into Ingrese el usuario" width="1850"/>
+                <img src="d46cfbdc8e00b752aaefd9c0c75eb48bc054ed28ee4ab9765a719ea6b5d69db0.png" title=" Analista Exito enters 'oct-test-vex-exito-demo-cdv-exito-demo3@outlook.com' into Ingrese el usuario (completed)" width="1850"/>
+                <img src="d46cfbdc8e00b752aaefd9c0c75eb48bc054ed28ee4ab9765a719ea6b5d69db0.png" title=" Analista Exito enters 'Octopi@1!' into Ingrese la contrase&ntilde;a" width="1850"/>
+                <img src="62655c8ae6cd1395528960d77169685f73fcd98c90b0c0ddc0463c92c19a8264.png" title=" Analista Exito enters 'Octopi@1!' into Ingrese la contrase&ntilde;a (completed)" width="1850"/>
+                <img src="62655c8ae6cd1395528960d77169685f73fcd98c90b0c0ddc0463c92c19a8264.png" title=" Analista Exito clicks on Inicie sesi&oacute;n" width="1850"/>
+                <img src="639f609636afb3ba05d2fce7b697797a029072e0c2dd89023901ee1ba059612a.png" title=" Analista Exito clicks on Inicie sesi&oacute;n (completed)" width="1850"/>
+                <img src="1856a912751e993508aa59d080f167115b7cfc24f344347c83fa27e172c35cc8.png" title=" Analista exito iniciar sesion octopia vendedor (completed)" width="1850"/>
+                <img src="1856a912751e993508aa59d080f167115b7cfc24f344347c83fa27e172c35cc8.png" title=" Analista exito aceptar cookies octopia vendedores" width="1850"/>
+                <img src="1856a912751e993508aa59d080f167115b7cfc24f344347c83fa27e172c35cc8.png" title=" Analista Exito clicks on Seleccione aceptar cookies" width="1850"/>
+                <img src="d95759931066213a170c496aa7e9f5df8b89b73ea184fc4ff72e0a9984a15644.png" title=" Analista Exito clicks on Seleccione aceptar cookies (completed)" width="1850"/>
+                <img src="d95759931066213a170c496aa7e9f5df8b89b73ea184fc4ff72e0a9984a15644.png" title=" Analista exito aceptar cookies octopia vendedores (completed)" width="1850"/>
+                <img src="d95759931066213a170c496aa7e9f5df8b89b73ea184fc4ff72e0a9984a15644.png" title=" Analista exito cambiar idioma octopia vendedores" width="1850"/>
+                <img src="d95759931066213a170c496aa7e9f5df8b89b73ea184fc4ff72e0a9984a15644.png" title=" Analista Exito clicks on Opci&oacute;n de idioma - Espa&ntilde;ol" width="1850"/>
+                <img src="a18531d7754094e7bd61a94d95e319035097046c60bf2530a722dc3d76a34366.png" title=" Analista Exito clicks on Opci&oacute;n de idioma - Espa&ntilde;ol (completed)" width="1850"/>
+                <img src="a18531d7754094e7bd61a94d95e319035097046c60bf2530a722dc3d76a34366.png" title=" Analista Exito clicks on Idioma Espa&ntilde;ol" width="1850"/>
+                <img src="c59094a168e1f03e439c878c37267537e4a787cdfac81a74731df655c0b84a29.png" title=" Analista Exito clicks on Idioma Espa&ntilde;ol (completed)" width="1850"/>
+                <img src="212d67723ee155e727cfeec06dbcc947c389d784f905bcf591f7eebb02ef9484.png" title=" Analista exito cambiar idioma octopia vendedores (completed)" width="1850"/>
+                <img src="212d67723ee155e727cfeec06dbcc947c389d784f905bcf591f7eebb02ef9484.png" title=" Analista exito crear productos masivamente" width="1850"/>
+                <img src="212d67723ee155e727cfeec06dbcc947c389d784f905bcf591f7eebb02ef9484.png" title=" Analista Exito clicks on Seleccionar men&uacute; productos" width="1850"/>
+                <img src="cce19098419030006925f037a8e7a4cbf2416bc322afeaa046814d9c997f1938.png" title=" Analista Exito clicks on Seleccionar men&uacute; productos (completed)" width="1850"/>
+                <img src="cce19098419030006925f037a8e7a4cbf2416bc322afeaa046814d9c997f1938.png" title=" Analista Exito clicks on Seleccionar men&uacute; Crear productos masivamente" width="1850"/>
+                <img src="98343632580344ce8072ca9a13641bfbc6f63e03ef18dbc58f0fad75f014bd85.png" title=" Analista Exito clicks on Seleccionar men&uacute; Crear productos masivamente (completed)" width="1850"/>
+                <img src="98343632580344ce8072ca9a13641bfbc6f63e03ef18dbc58f0fad75f014bd85.png" title=" Upload file at src/test/resources/excelDataTest/pdt_template_es-CO_pruebaMasivaNoVariante.xlsm to Bot&oacute;n EXAMINAR para cargar archivo productos" width="1850"/>
+                <img src="28bf832f69eb4e6ec6c29f1cb75fb9345fa5e31090eb7f61b6622c5ea12f5453.png" title=" Upload file at src/test/resources/excelDataTest/pdt_template_es-CO_pruebaMasivaNoVariante.xlsm to Bot&oacute;n EXAMINAR para cargar archivo productos (completed)" width="1850"/>
+                <img src="28bf832f69eb4e6ec6c29f1cb75fb9345fa5e31090eb7f61b6622c5ea12f5453.png" title=" Analista Exito clicks on Bot&oacute;n EXAMINAR para cargar archivo productos" width="1850"/>
+                <img src="25be889cf3f1c0f0245ac55b3f43c39fb8be54995a40aebed4ad9f9cb64ac1de.png" title=" Analista Exito clicks on Bot&oacute;n EXAMINAR para cargar archivo productos (completed)" width="1850"/>
+                <img src="0b836467632e2b6baea2e8decf6ed167c8d7659c2c498d530330a733fad5eb95.png" title=" Analista Exito clicks on Bot&oacute;n Cerrar" width="1850"/>
+                <img src="7586a24d50e9bf26a5becf2910383c5be5be597e65a13efd708ba0597917f6e8.png" title=" Analista Exito clicks on Bot&oacute;n Cerrar (completed)" width="1850"/>
+                <img src="98343632580344ce8072ca9a13641bfbc6f63e03ef18dbc58f0fad75f014bd85.png" title=" Analista exito crear productos masivamente (completed)" width="1850"/>
+                <img src="98343632580344ce8072ca9a13641bfbc6f63e03ef18dbc58f0fad75f014bd85.png" title=" Analista exito crear oferta masiva" width="1850"/>
+                <img src="98343632580344ce8072ca9a13641bfbc6f63e03ef18dbc58f0fad75f014bd85.png" title=" Analista exito vender producto" width="1850"/>
+                <img src="98343632580344ce8072ca9a13641bfbc6f63e03ef18dbc58f0fad75f014bd85.png" title=" Analista Exito clicks on Seleccionar men&uacute; productos" width="1850"/>
+                <img src="a915f38e91ca2f66e7ce5595681808d406b8aac6a42432c66a0a4d5a4c1c330e.png" title=" Analista Exito clicks on Seleccionar men&uacute; productos (completed)" width="1850"/>
+                <img src="a915f38e91ca2f66e7ce5595681808d406b8aac6a42432c66a0a4d5a4c1c330e.png" title=" Analista Exito clicks on Seleccionar men&uacute; productos, vender producto" width="1850"/>
+                <img src="008b0ca6d3ad94374296cabfb6a30d768565674047af1d697d4208eb0a2c80e4.png" title=" Analista Exito clicks on Seleccionar men&uacute; productos, vender producto (completed)" width="1850"/>
+                <img src="008b0ca6d3ad94374296cabfb6a30d768565674047af1d697d4208eb0a2c80e4.png" title=" Analista exito vender producto (completed)" width="1850"/>
+                <img src="0ea11372d8da156fd3051ce68184b72f4af068120f2b26bed16de2d7271bb231.png" title=" Analista exito crear oferta" width="1850"/>
+                <img src="0ea11372d8da156fd3051ce68184b72f4af068120f2b26bed16de2d7271bb231.png" title=" Analista exito seleccionar producto" width="1850"/>
+                <img src="0ea11372d8da156fd3051ce68184b72f4af068120f2b26bed16de2d7271bb231.png" title=" Analista Exito enters '6454593662482' into Barra de b&uacute;squeda" width="1850"/>
+                <img src="d1c99f3b9b0cda1da2a05a9d06ba0648c0212d46bd8fe21a143fb7a94f6e6fae.png" title=" Analista Exito enters '6454593662482' into Barra de b&uacute;squeda (completed)" width="1850"/>
+                <img src="d1c99f3b9b0cda1da2a05a9d06ba0648c0212d46bd8fe21a143fb7a94f6e6fae.png" title=" Analista Exito clicks on Bot&oacute;n b&uacute;squeda" width="1850"/>
+                <img src="a8b95cd4bf847a8105c8ef8754647b5ba72edbcb46b197fe4a9505396ef77eed.png" title=" Analista Exito clicks on Bot&oacute;n b&uacute;squeda (completed)" width="1850"/>
+                <img src="d7cecd851d63498e530a4bf29aefca859a4d172c978c6db9ae996ab67afdffd9.png" title=" Analista Exito clicks on Bot&oacute;n vender producto" width="1850"/>
+                <img src="8b5ba9a255cb7388ad9b1ccfb5106c091766586fe3bfe095dab6299d9a43afd8.png" title=" Analista Exito clicks on Bot&oacute;n vender producto (completed)" width="1850"/>
+                <img src="8b5ba9a255cb7388ad9b1ccfb5106c091766586fe3bfe095dab6299d9a43afd8.png" title=" Analista exito seleccionar producto (completed)" width="1850"/>
+                <img src="8b5ba9a255cb7388ad9b1ccfb5106c091766586fe3bfe095dab6299d9a43afd8.png" title=" Analista Exito enters '6454593662482' into Ingrese la referencia del producto" width="1850"/>
+                <img src="88c21bfc5d615dceeeefaf002fc91f83f5a62f0a377c741acd3fc09a2f620e0e.png" title=" Analista Exito enters '6454593662482' into Ingrese la referencia del producto (completed)" width="1850"/>
+                <img src="88c21bfc5d615dceeeefaf002fc91f83f5a62f0a377c741acd3fc09a2f620e0e.png" title=" Analista Exito enters '400' into Ingrese el inventario disponible" width="1850"/>
+                <img src="fe9f1cd1c9930791b56366facc51d0ef14b0758f19c2cb4cb3909117daa9adfb.png" title=" Analista Exito enters '400' into Ingrese el inventario disponible (completed)" width="1850"/>
+                <img src="fe9f1cd1c9930791b56366facc51d0ef14b0758f19c2cb4cb3909117daa9adfb.png" title=" Analista Exito enters '5000' into Ingrese el precio" width="1850"/>
+                <img src="88140619f580407c2cba19919b4a32ef09329cb00c2aa1eec7a87c33f541c999.png" title=" Analista Exito enters '5000' into Ingrese el precio (completed)" width="1850"/>
+                <img src="88140619f580407c2cba19919b4a32ef09329cb00c2aa1eec7a87c33f541c999.png" title=" Analista Exito enters '8000' into Ingrese el precio tachado" width="1850"/>
+                <img src="80045b7b879ba5849a4f0d54fb5b4adb120cbb6fc5ff93316afd37b13fd79f36.png" title=" Analista Exito enters '8000' into Ingrese el precio tachado (completed)" width="1850"/>
+                <img src="80045b7b879ba5849a4f0d54fb5b4adb120cbb6fc5ff93316afd37b13fd79f36.png" title=" Analista Exito enters 'CAMPO PARA COLOCAR UNA DESCRIPCI&Oacute;N M&Aacute;S COMPLETA' into Ingrese los comentarios" width="1850"/>
+                <img src="7c115788ad72fdf88446bb0f46c69eab29a094dd51eae69d974ec06463077d71.png" title=" Analista Exito enters 'CAMPO PARA COLOCAR UNA DESCRIPCI&Oacute;N M&Aacute;S COMPLETA' into Ingrese los comentarios (completed)" width="1850"/>
+                <img src="7c115788ad72fdf88446bb0f46c69eab29a094dd51eae69d974ec06463077d71.png" title=" Analista Exito enters '6000' into Ingrese los gastos de entrega THD" width="1850"/>
+                <img src="00d3ecbbddae2cc9b953efe7c67f500b294bdb90264782c47d3bc83ef222c578.png" title=" Analista Exito enters '6000' into Ingrese los gastos de entrega THD (completed)" width="1850"/>
+                <img src="00d3ecbbddae2cc9b953efe7c67f500b294bdb90264782c47d3bc83ef222c578.png" title=" Analista Exito enters '2000' into Ingrese los gastos de entrega complementarios THD" width="1850"/>
+                <img src="e5ba867e4792e086e9dc849c2705682e6c1932ad295343b21fc61e0e8fe4b1ef.png" title=" Analista Exito enters '2000' into Ingrese los gastos de entrega complementarios THD (completed)" width="1850"/>
+                <img src="e5ba867e4792e086e9dc849c2705682e6c1932ad295343b21fc61e0e8fe4b1ef.png" title=" Analista Exito enters '5000' into Ingrese los gastos de entrega SHD" width="1850"/>
+                <img src="e27b05a21577dc6310f0d32ca208cd83296b0bdf04ccd002723e7d28eb7ae81e.png" title=" Analista Exito enters '5000' into Ingrese los gastos de entrega SHD (completed)" width="1850"/>
+                <img src="e27b05a21577dc6310f0d32ca208cd83296b0bdf04ccd002723e7d28eb7ae81e.png" title=" Analista Exito enters '1000' into Ingrese los gastos de entrega complementarios SHD" width="1850"/>
+                <img src="c0ed28ae448e2e78558bf9222fd26992c4ee85a2151e1db6ab53ac0cc005042e.png" title=" Analista Exito enters '1000' into Ingrese los gastos de entrega complementarios SHD (completed)" width="1850"/>
+                <img src="c0ed28ae448e2e78558bf9222fd26992c4ee85a2151e1db6ab53ac0cc005042e.png" title=" Analista Exito enters '2' into Ingrese los d&iacute;as de plazo de preparaci&oacute;n" width="1850"/>
+                <img src="25c98c86a5c08ed4f28828a55042f42a43c59a03414c6208c08be390a7735204.png" title=" Analista Exito enters '2' into Ingrese los d&iacute;as de plazo de preparaci&oacute;n (completed)" width="1850"/>
+                <img src="25c98c86a5c08ed4f28828a55042f42a43c59a03414c6208c08be390a7735204.png" title=" Analista Exito clicks on Seleccione publicar oferta" width="1850"/>
+                <img src="e571879cf3c67c394874be45a13f64bf91aba92cc7082bc2f8c298040e213e93.png" title=" Analista Exito clicks on Seleccione publicar oferta (completed)" width="1850"/>
+                <img src="194b116cc6bffeb2fe85045d0acc720daded5cf9146b39a758d171c19cafc23d.png" title=" Analista exito crear oferta (completed): <span class='failing-color'>FAILURE</span>" width="1850"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.12</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "products" : [ {
+    "gtin" : 2852169302833,
+    "sellerProductReference" : "2852169302833",
+    "gtinReference" : "2852169302833",
+    "title" : "Prueba no vender: Esqueleto Camiseta Blanca Para Bebé",
+    "description" : "Camisa Trio Camisetas Sisa Para Bebé 65% poliéster 35% algodón Hermosas camisetas trio para bebé. Perfectas para toda ocasión, para dormir, para jugar. Material fresco y delicado para la piel del bebé.",
+    "richMarketingDescription" : "<div style=\"margin: 5px;\"><br /><div class=\"flt_left\"><span class=\"contentm12left\">Categoría: </span><span class=\"contentd12\"><label style=\"color: #3366cc;\">Ropa de Bebé</label></span></div><div class=\"flt_right\"><span class=\"contentm12left\">Fecha de lanzamiento: </span><span class=\"contentd12\" style=\"color: #ff6600;\">Fecha no especificada</span></div><div class=\"clear\"><div class=\"clear contentd10j\"></div></div><div class=\"clear center contentd12\"><span style=\"font-size: 1.3em; color: #990000;\">Conjunto de Camisetas Trio para Bebé</span></div><br /></div><div class=\"clear center contentm14\"><strong style=\"color: #008000;\">Descripción</strong></div><br /><div class=\"clear\"><strong class=\"center clear contentm14\" style=\"color: #ffcc00;\">Detalles</strong><br /><div class=\"clear contentd10j\"><ul style=\"list-style-type: square; color: #333333; font-size: 0.9em;\"><li>Hermosas camisetas trio para bebé.</li><li>Perfectas para toda ocasión, para dormir, para jugar.</li><li>Material fresco y delicado para la piel del bebé.</li><li>Composición: 65% poliéster, 35% algodón.</li></ul></div><br /></div><div class=\"clear\"><strong class=\"center clear contentm14\" style=\"color: #ff0066;\">Críticas</strong><br /><!-- DIV 4.1--><!-- DIV 4.1 - FIN --><!-- DIV 4.2--><div class=\"clear contentd10j\"><ul style=\"list-style-type: circle; color: #666666; font-size: 0.9em;\"><li>Aucune critique disponible.</li></ul></div><br /><!-- DIV 4.2 - FIN --></div>",
+    "sellerPictureUrls" : [ {
+      "index" : 1,
+      "url" : "https://s3.amazonaws.com/seller.center.exito.images/images/products/947/PMK0000007628947/MK00000007628950_txl_a.jpg"
+    }, {
+      "index" : 2,
+      "url" : "https://s3.amazonaws.com/seller.center.exito.images/images/products/947/PMK0000007628947/MK00000007628950_txl_b.jpg"
+    }, {
+      "index" : 3,
+      "url" : "https://s3.amazonaws.com/seller.center.exito.images/images/products/947/PMK0000007628947/MK00000007628950_txl_c.jpg"
+    }, {
+      "index" : 4,
+      "url" : "https://s3.amazonaws.com/seller.center.exito.images/images/products/947/PMK0000007628947/MK00000007628950_txl_d.jpg"
+    } ],
+    "brand" : "MUNDO BEBE",
+    "categoryCode" : "100A03",
+    "language" : "es-ES",
+    "attributes" : [ {
+      "propertyReference" : 3263,
+      "values" : [ "Surtidos" ]
+    }, {
+      "propertyReference" : 46801,
+      "values" : [ "S" ]
+    } ]
+  } ]
+}

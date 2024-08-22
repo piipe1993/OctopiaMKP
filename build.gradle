@@ -1,0 +1,67 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id "net.serenity-bdd.serenity-gradle-plugin" version "3.6.7"
+}
+
+defaultTasks 'clean', 'test'
+
+repositories {
+    mavenCentral()
+}
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext {
+    slf4jVersion = '1.7.7'
+    serenityCoreVersion = '3.6.12'
+    junitVersion = '5.8.2'
+    assertJVersion = '3.22.0'
+    logbackVersion = '1.4.7'
+}
+
+serenity {
+    reports = ["single-page-html"]
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:2.0.5'
+    implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}"
+    implementation "org.junit.vintage:junit-vintage-engine:${junitVersion}"
+    implementation 'net.serenity-bdd:serenity-rest-assured:3.6.12'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'net.serenity-bdd:serenity-single-page-report:3.6.9'
+    implementation 'com.oracle.database.jdbc:ojdbc10:19.18.0.0'
+    implementation "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}"
+    implementation 'com.amazonaws:aws-java-sdk:1.12.581'
+    implementation 'org.fusesource.jansi:jansi:1.18'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}"
+    implementation 'org.apache.poi:poi:5.0.0'
+    implementation 'org.apache.poi:poi-ooxml:5.0.0'
+    implementation group: 'software.amazon.awssdk', name: 'dynamodb', version: '2.23.17'
+
+
+
+
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
+
+}
+
+test {
+    maxParallelForks 3
+    systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+gradle.startParameter.continueOnFailure = true

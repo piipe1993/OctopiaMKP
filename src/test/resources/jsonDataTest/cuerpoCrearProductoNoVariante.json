@@ -1,0 +1,33 @@
+{
+  "products" : [ {
+    "gtin" : 2300949646269,
+    "sellerProductReference" : "2300949646269",
+    "title" : "PRUEBA Empaque para Cafe OFERTA NUEVA NO VENDER",
+    "description" : "PRUEBA OFERTA NUEVA Empaque para Cafe PRODUCTO NO VENDER",
+    "richMarketingDescription" : "PRUEBA OFERTA NUEVA Empaqui para Cafe PRODUCTO NO VENDER",
+    "sellerPictureUrls" : [ {
+      "index" : 1,
+      "url" : "https://cdn.octopia-io.net/pdt2/3/1/9/3/700x700/761319/rw/plastorex-coupelle-micro-ondable-polypropylene-12.jpg"
+    }, {
+      "index" : 2,
+      "url" : "https://cdn.octopia-io.net/pdt2/3/1/9/1/700x700/761319/rw/plastorex-coupelle-micro-ondable-polypropylene-12.jpg"
+    }, {
+      "index" : 3,
+      "url" : "https://www.cafeslabrasilena.es/wp-content/uploads/2020/05/taza-para-cada-caf%C3%A9-1.png"
+    } ],
+    "categoryCode" : "0E0B0N",
+    "brand" : "ALASKA",
+    "language" : "es-ES",
+    "gtinReference" : null,
+    "attributes" : [ {
+      "propertyReference" : 23346,
+      "values" : [ "Ceramica" ]
+    }, {
+      "propertyReference" : 26033,
+      "values" : [ "Corona" ]
+    }, {
+      "propertyReference" : 37299,
+      "values" : [ "No" ]
+    } ]
+  } ]
+}
